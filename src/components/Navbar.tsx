@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo2.png";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
             <nav className="fixed top-0 left-0 w-full bg-white h-20 shadow-sm flex items-center justify-between px-8 z-50">
 
                 <div>
-                    <img src="../src/assets/logo2.png" alt="Bacus" className="-translate-x-20 md:translate-x-0" />
+                    <img src={logo} alt="Logo" className="-translate-x-20 md:translate-x-0" />
                 </div>
 
                 <ul className="hidden md:flex items-center gap-10 font-medium">
