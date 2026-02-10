@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import pciLogo from '../../../assets/pcilogo.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -77,7 +78,7 @@ const PCISection = () => {
                             <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                                 <div className="w-32 h-32 bg-white rounded-full shadow-lg flex items-center justify-center p-2">
                                     <img
-                                        src="../../src/assets/pcilogo.png"
+                                        src={pciLogo}
                                         alt="PCI Level 1 Certified"
                                         className="w-full h-full object-contain"
                                     />
