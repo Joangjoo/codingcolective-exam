@@ -1,0 +1,24 @@
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-scroll {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+    gap: 3rem;
+}
+
+.logo-scroll:hover {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    display: inline-block;
+}
